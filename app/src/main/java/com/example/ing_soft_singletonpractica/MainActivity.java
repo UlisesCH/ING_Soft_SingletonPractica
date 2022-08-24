@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     public void insert(){
         SQLiteDatabase conexion = Singleton.getDataBaseInstance(getApplicationContext()).getWritableDatabase();
         ContentValues contenido = new ContentValues();
-        contenido.put("idUsuario",1);
+        contenido.put("idUsuario",15);
         contenido.put("nombreUser","Juan Perez");
         contenido.put("edad",23);
         if(conexion.insert("tbl_usuarios", null, contenido)>0){
